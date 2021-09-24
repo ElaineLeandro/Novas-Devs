@@ -1,19 +1,12 @@
 function save (){
-    nome=document.getElementById("nome").value;
-    datanasc=document.getElementById("nasc").value;
-    cep=document.getElementById("cep").value;
-    sexo=document.querySelector('input[name=sexo]:checked').value;
-    tel=document.getElementById("tel").value;
-    email=document.getElementById("email").value;
-    estadocivil=document.getElementById("civil").value;
-
-
-    divmostra=document.getElementById("mostra").innerHTML;
-
-    var botoes = document.getElementsByName("mybuttons");
-
-    document.getElementById("mostra").innerHTML = divmostra+nome+";"+datanasc+";"+cep+";"+sexo+";"+tel+";"+email+";"+estadocivil+"<br>";
+    var nome = $("#nome").val();
+    alert(nome);
     
+    $.get("../../backend/indexmock.txt",
+    function(data){
+        $("#conteudo").html(data);
+    }
+    )
 } 
 function insereLinhaTabela(){
     tabela= document.getElementById("minhaTabela");
