@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <script language="jscript" src="./js/lib.js"></script>
-    <script language="jscript" src="./js/materialize.js"></script>
+   <!-- <script language="jscript" src="./js/materialize.js"></script>-->
     <script language="jscript" src="./js/jquery-3.6.0.js"></script>
+    <script language="jscript" src="./js/lib.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <title>Amanda</title>
+    <!--<link rel="stylesheet" type="text/css" href="css/materialize.css">-->
+    <link rel="stylesheet" type="text/css" href="css/design.css">
   
 </head>
 <body>
-    <h1>Agenda</h1>    
-    <form>
+    <h1>Agenda <img src = "http://www.spmar.com.br/web/wp-content/uploads/2018/04/Agenda-Icon.png" alt = "comi sua avo"> </h1>    
+    <form id = Formulario>
         Nome: <input type="text" id = nome> <br><br>
         Data Nasc: <input type="text" id = nasc > <br><br>
         Cep: <input type="text" id = cep> <br><br>
@@ -41,7 +42,7 @@
         <input class="waves-effect waves-light btn" type="button" id=salvar value=salvar onclick="save()">
         <input class="waves-effect waves-light btn" type="button" id=salvar value=insere onclick="insereLinhaTabela()">
     </form>
-
+<p> &nbsp; </p>
             <table style=width:50% border="1" id="minhaTabela">
                 <thead>
                 <tr>
@@ -59,7 +60,7 @@
     <div id="mostra"> 
         
     </div>
-
+<div id = conteudo>  </div>
 </body>
 </html>
 <script src="./js/lib.js?v=1">
