@@ -3,7 +3,7 @@
 <head>
    <!-- <script language="jscript" src="./js/materialize.js"></script>-->
     <script language="jscript" src="./js/jquery-3.6.0.js"></script>
-    <script language="jscript" src="./js/lib.js"></script>
+    <script language="jscript" src="./js/lib.js?v=1"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,6 +40,7 @@
           </select>
           <br><br>
         <input class="waves-effect waves-light btn" type="button" id=salvar value=salvar onclick="save()">
+        <input class="waves-effect waves-light btn" type="button" id=salvar value=mostraPokemon onclick="mostraPokemon()">
         <input class="waves-effect waves-light btn" type="button" id=salvar value=insere onclick="insereLinhaTabela()">
     </form>
 <p> &nbsp; </p>
@@ -61,6 +62,7 @@
         
     </div>
 <div id = conteudo>  </div>
+<div id = sprite>  </div>
 </body>
 </html>
 <script src="./js/lib.js?v=1">
